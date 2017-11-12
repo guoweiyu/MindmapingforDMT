@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white">
+    
+    <!--<Button-->
+        <!--android:id="@+id/welcomeNewBtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="55dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:gravity="center"-->
+        <!--&lt;!&ndash;android:text="@string/createMapBtn"&ndash;&gt;-->
+        <!--/>-->
+ <!---->
+     <!--<Button-->
+        <!--android:id="@+id/welcomeReadBtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_below="@id/welcomeNewBtn"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/loadMapBtn"-->
+        <!--/>-->
+     <!---->
+     <!--<Button-->
+        <!--android:id="@+id/welcomeDeleteBtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_below="@id/welcomeReadBtn"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/deleteMapBtn"-->
+        <!--/>-->
+     <!---->
+     <!--<Button-->
+        <!--android:id="@+id/welcomeImportBtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_below="@id/welcomeDeleteBtn"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/str_import"-->
+        <!--/>-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Hello!"
+                android:textColor="@color/black"
+                android:id="@+id/textViewHello"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="29dp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerStyles"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/textViewHello" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:id="@+id/imageView"
+                android:layout_below="@id/spinnerStyles"
+                android:src="@drawable/classic" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create New Mind Map"
+                android:id="@+id/buttonCreateMindMap"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/imageView"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
